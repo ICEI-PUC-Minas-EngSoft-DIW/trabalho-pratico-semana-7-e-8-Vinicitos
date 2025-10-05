@@ -12,7 +12,7 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
+- Nome: 
 - Matricula:
 - Proposta de projeto escolhida:
 - Breve descrição sobre seu projeto:
