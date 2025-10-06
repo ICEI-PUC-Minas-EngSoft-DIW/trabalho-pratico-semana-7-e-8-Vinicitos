@@ -10,98 +10,72 @@
   <header class="cabecalho">
     <h1>O GRIMÓRIO</h1>
     <nav class="menu">
-      <button class="btn-random">Carta aleátoria</button>
+      <button class="btn-random">Carta Aleatória</button>
     </nav>
   </header>
 
   <main class="principal">
-    <section class="cartas">
-      <article class="carta">
-        <img src="https://picsum.photos/id/1025/200/300" alt="Carta 1">
-      </article>
-      <article class="carta">
-        <img src="https://picsum.photos/id/1062/200/300" alt="Carta 2">
-      </article>
-      <article class="carta">
-        <img src="https://picsum.photos/id/237/200/300" alt="Carta 3">
-      </article>
-      <article class="carta">
-        <img src="https://picsum.photos/id/1074/200/300" alt="Carta 4">
-      </article>
-      <article class="carta">
-        <img src="https://picsum.photos/id/1084/200/300" alt="Carta 5">
-      </article>
-      <article class="carta">
-        <img src="https://picsum.photos/id/1011/200/300" alt="Carta 6">
-      </article>
+    <section id="cartas-container" class="cartas-container">
+      
     </section>
 
     <aside class="detalhes">
-      <section class="info">
+      <form id="filtro-form">
         <h2>Filtros</h2>
-        <section>
-    <details>
-        <summary>Cor</summary>
-        <select name="Cor" required multiple>
-        <option value="Preta">Preta</option>
-        <option value="Vermelha">Vermelha</option>
-        <option value="Azul">Azul</option>
-        <option value="Verde">Verde</option>
-        <option value="Branco">Branco</option>
-        </select>
-    </details>
-    <details>
-        <summary>Tipo</summary>
-        <select name="Tipo" required multiple>
-        <option value="Criatura">Criatura</option>
-        <option value="Feitiço">Feitiço</option>
-        <option value="Mágica Instantânea">Mágica Instantânea</option>
-        <option value="Encantamento">Encantamento</option>
-        <option value="Artefato">Artefato</option>
-        <option value="Terreno">Terreno</option>
-        <option value="Planeswalker">Planeswalker</option>
-        </select>
-    </details>
-    <details>
-        <summary>Custo de Mana</summary>
-        <select name="Custo de Mana" required multiple>
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6+">6+</option>
-        </select>
-    </details>
-    <details>
-        <summary>Raridade</summary>
-        <select name="Raridade" required multiple>
-        <option value="Comum">Comum</option>
-        <option value="Incomum">Incomum</option>
-        <option value="Rara">Rara</option>
-        <option value="Mítica">Mítica</option>
-        </select>
-    </details>
-    <details>
-        <summary>Edição</summary>
-        <select name="Edição" required multiple>
-        <option value="Dominária Remasterizada">Dominária Remasterizada</option>
-        <option value="Marcha das Máquinas">Marcha das Máquinas</option>
-        <option value="Coleção Básica 2021">Coleção Básica 2021</option>
-        <option value="Theros Além da Morte">Theros Além da Morte</option>
-        </select>
-    </details>
-    </section>
-
-      <section class="filtrar">
-          <button type="submit">Buscar</button>
-      </section>
+        <div class="filtros-opcoes">
+          <details open>
+            <summary>Cor</summary>
+            <select name="cor" multiple>
+              <option value="W">Branco</option>
+              <option value="U">Azul</option>
+              <option value="B">Preto</option>
+              <option value="R">Vermelho</option>
+              <option value="G">Verde</option>
+            </select>
+          </details>
+          <details>
+            <summary>Tipo</summary>
+            <select name="tipo" multiple>
+              <option value="Creature">Criatura</option>
+              <option value="Sorcery">Feitiço</option>
+              <option value="Instant">Mágica Instantânea</option>
+              <option value="Enchantment">Encantamento</option>
+              <option value="Artifact">Artefato</option>
+              <option value="Land">Terreno</option>
+              <option value="Planeswalker">Planeswalker</option>
+            </select>
+          </details>
+          <details>
+            <summary>Custo de Mana</summary>
+            <select name="cmc" multiple>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6+</option>
+            </select>
+          </details>
+          <details>
+            <summary>Raridade</summary>
+            <select name="raridade" multiple>
+              <option value="Common">Comum</option>
+              <option value="Uncommon">Incomum</option>
+              <option value="Rare">Rara</option>
+              <option value="Mythic">Mítica</option>
+            </select>
+          </details>
+        </div>
+        <button type="submit" class="btn-buscar">Buscar</button>
+      </form>
     </aside>
   </main>
 
   <footer class="rodape">
     <p>&copy; 2025 O Grimório - Todos os direitos reservados.</p>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
