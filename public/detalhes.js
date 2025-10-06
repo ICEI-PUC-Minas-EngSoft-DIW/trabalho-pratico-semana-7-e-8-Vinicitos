@@ -39,7 +39,7 @@ function getCardImageUrl(card) {
 function renderizarDetalhes(carta ) {
   const detalheContainer = document.getElementById('detalhe-container');
   
-  // Tenta pegar a tradução, se não tiver, usa os dados originais
+ 
   const traducao = carta.foreignNames?.find(fn => fn.language === "Portuguese (Brazil)");
   const nome = traducao?.name || carta.name;
   const texto = traducao?.text || carta.text;
@@ -48,7 +48,7 @@ function renderizarDetalhes(carta ) {
 
   const imageUrl = getCardImageUrl(carta);
 
-  // Constrói o HTML com os detalhes
+
   let detalhesHTML = `
     <div class="detalhe-imagem">
       <img src="${imageUrl}" alt="${nome}">
